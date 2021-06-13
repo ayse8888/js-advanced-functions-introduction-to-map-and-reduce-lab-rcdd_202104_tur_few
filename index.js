@@ -47,6 +47,18 @@ console.log(reduceToAllTrue(value))
 
 const result = [true, false, false]
 const reduceToAnyTrue = (arr) => {
+const arrayNew = [1,2,3,4,5]
+const reduceToTotal = (arr) => {
+  return arr.reduce(function(accumulator, currentValue) {
+  // console.log(currentValue)
+  return accumulator + currentValue
+})
+}
+console.log(reduceToTotal(arrayNew))
+
+
+const value = [true, true, true]
+const reduceToAllTrue = (arr) => {
   return arr.reduce(function(accumulator, currentValue) {
    if(currentValue){
      return true
@@ -56,5 +68,6 @@ const reduceToAnyTrue = (arr) => {
 })
 }
 console.log(reduceToAnyTrue(result))
+console.log(reduceToAllTrue(value))
 
 
